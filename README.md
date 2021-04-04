@@ -9,4 +9,4 @@ MySql Configuration
         password: 'denemepass',
         database: 'production'
 
-
+Can try by mdpGroupTask.postman_collection.json.
