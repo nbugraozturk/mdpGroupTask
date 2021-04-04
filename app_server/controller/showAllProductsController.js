@@ -5,7 +5,7 @@ var db = require('../model/dbconnection');
 
 
 
-module.exports.showProducts = (req, res) => {
+module.exports.showAllProducts = (req, res) => {
 
 
     let pathname = req._parsedUrl.pathname.split('/');

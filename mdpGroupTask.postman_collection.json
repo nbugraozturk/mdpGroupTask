@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "7b3f530d-ab34-4064-b76d-13686124b02c",
+		"name": "mdpGroupTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/addProduct?brandID=2&brandName=Acer&categoryID=1&categoryName=Gaming&productID=null&productName=Predator&modelYear=2021&listPrice=7390",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"addProduct"
+					],
+					"query": [
+						{
+							"key": "brandID",
+							"value": "2"
+						},
+						{
+							"key": "brandName",
+							"value": "Acer"
+						},
+						{
+							"key": "categoryID",
+							"value": "1"
+						},
+						{
+							"key": "categoryName",
+							"value": "Gaming"
+						},
+						{
+							"key": "productID",
+							"value": "null"
+						},
+						{
+							"key": "productName",
+							"value": "Predator"
+						},
+						{
+							"key": "modelYear",
+							"value": "2021"
+						},
+						{
+							"key": "listPrice",
+							"value": "7390"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/showAllProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"showAllProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/showProduct/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"showProduct",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/deleteProduct/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"deleteProduct",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/updateProduct/2?new_product_name=GameBox&new_list_price=8700",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"updateProduct",
+						"2"
+					],
+					"query": [
+						{
+							"key": "new_product_name",
+							"value": "GameBox"
+						},
+						{
+							"key": "new_list_price",
+							"value": "8700"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/addCart/12?order_id=1&quantity=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"addCart",
+						"12"
+					],
+					"query": [
+						{
+							"key": "order_id",
+							"value": "1"
+						},
+						{
+							"key": "quantity",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,8 +1,6 @@
 var db = require('../model/dbconnection');
 
 
-let addProductsSQL = `INSERT INTO products VALUES(NULL, 'Samsung Laptop', '67890');`;
-
 module.exports.addProduct = (req, res) => {
 
 
@@ -21,7 +19,7 @@ module.exports.addProduct = (req, res) => {
         try {
             if (err) throw err.message;
         } catch {
-            console.log("Brand Allready Exists")
+            console.log(err.message);
         }
     })
 
@@ -30,7 +28,7 @@ module.exports.addProduct = (req, res) => {
         try {
             if (err) throw err.message;
         } catch {
-            console.log("Category Allready Exists")
+            console.log(err.message);
         }
     })
 
@@ -39,7 +37,7 @@ module.exports.addProduct = (req, res) => {
         try {
             if (err) throw err.message;
         } catch {
-            console.log("Product Allready Exists")
+            console.log(err.message);
             res.send('Product Allready Exists');
         }
 
