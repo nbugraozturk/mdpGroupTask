@@ -7,13 +7,14 @@ if (port === 8000) {
         port: '8080',
         user: 'deneme1',
         password: 'denemepass',
-        database: 'user_deneme2'
+        database: 'production'
     });
 }
 
 connection.connect((err) => {
     if (err) throw err;
     console.log("Connected to db");
+
 });
 
 module.exports = connection;
