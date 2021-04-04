@@ -9,13 +9,13 @@ module.exports.updateProduct = (req, res) => {
     const newListPrice = params[1].split('&')[1].split('=')[1];
     // eslint-disable-next-line no-useless-concat
     // eslint-disable-next-line max-len
-    const updateProductSQL = 'UPDATE products SET product_name = ' + "'" + newProductName + "'" + ", list_price = " + "'" + newListPrice + "'" + " Where product_id = ?";
+    const updateProductSQL = 'UPDATE products SET product_name = ' + "'" + newProductName + "'" + ', list_price = ' + "'" + newListPrice + "'" + ' Where product_id = ?';
 
 
     db.query(selectProductSQL, [req.params.product_ID], () => {
         db.query(updateProductSQL, [req.params.product_ID], (error) => {
             if (error) console.log(error);
-            res.send('Updated Successfully Product ' + req.params.product_ID);
+            res.send(`Updated Successfully Product ${req.params.product_ID}`);
         });
     });
 };
