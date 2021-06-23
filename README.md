@@ -14,3 +14,5 @@ MySql Configuration
 Can try by mdpGroupTask.postman_collection.json.
 
 Eslint extends rallycoding
+
+Try with postman.
